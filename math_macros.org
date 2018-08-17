@@ -302,10 +302,21 @@ Probabilistic operators.
 
 ** Estimators
 #+BEGIN_SRC latex-macros
-  \newcommand{\hbeta}{\hat{\beta}}
-  \newcommand{\hx}{\hat{\x}}
-  \newcommand{\hmu}{\hat{\mu}}
-  \newcommand{\hp}{\hat{p}}
-  \newcommand{\hpi}{\hat{\pi}}
-  \newcommand{\hsigma}{\hat{\sigma}}
+  % Maximum Likelihood Estimator
+  \newcommand{\mle}[1]{\hat{#1}}
+  % Special
+  \newcommand{\hsigmasq}{\mle{\sigma^{2}}}
+  % Greek
+  \newcommand{\halpha}{\mle{\alpha}}
+  \newcommand{\hbeta}{\mle{\beta}}
+  \newcommand{\hgamma}{\mle{\gamma}}
+  \newcommand{\htheta}{\mle{\theta}}
+  \newcommand{\hlambda}{\mle{\lambda}}
+  \newcommand{\hmu}{\mle{\mu}}
+  \newcommand{\hnu}{\mle{\nu}}
+  \newcommand{\hpi}{\mle{\pi}}
+  \newcommand{\hsigma}{\mle{\sigma}}
+  % Latin
+  \newcommand{\hx}{\mle{\x}}
+  \newcommand{\hp}{\mle{p}}
 #+END_SRC
