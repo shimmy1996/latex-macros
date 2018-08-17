@@ -1,0 +1,4 @@
+#+Title: Latex Macros
+#+Author: Shimmy Xu
+
+This is a collection of latex macros that I normally use for note taking. A lot of these are inspired by [[https://github.com/goodfeli/dlbook_notation][dlbook-notation]].

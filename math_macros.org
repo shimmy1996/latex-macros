@@ -1,0 +1,165 @@
+:LATEX_MACROS:
+#+BEGIN_SRC latex-macros :output none
+  % Mathematical constants and symbols
+  \newcommand{\E}{\mathrm{e}}
+  \newcommand{\dd}{\mathop{}\,\mathrm{d}}
+  \newcommand{\I}{\mathrm{i}}
+  \newcommand{\tr}{^{\mathsf{T}}}
+  \newcommand{\ev}{\mathbb{E}}
+  \newcommand{\pr}{\mathbb{P}}
+  \newcommand{\geqst}{\geq_{\text{st}}}
+  \newcommand{\leqst}{\leq_{\text{st}}}
+  % Common function with text names
+  \newcommand{\sgn}{\operatorname{sgn}}
+  \newcommand{\var}{\operatorname{var}}
+  \newcommand{\corr}{\operatorname{cor}}
+  \newcommand{\cov}{\operatorname{cov}}
+  \newcommand{\im}{\operatorname{Im}}
+  \newcommand{\re}{\operatorname{Re}}
+  \newcommand{\rank}{\operatorname{rank}}
+  \newcommand{\diag}{\operatorname{diag}}
+  \newcommand{\col}{\operatorname{col}}
+  \newcommand{\row}{\operatorname{row}}
+  % Operators and functions
+  \newcommand{\abs}[1]{\lvert#1\rvert}
+  \newcommand{\norm}[1]{\lVert#1\rVert}
+  \newcommand{\floor}[1]{\lfloor#1\rfloor}
+  \newcommand{\ceil}[1]{\lceil#1\rceil}
+  \newcommand{\pder}[2][]{\frac{\partial#1}{\partial#2}}
+  \newcommand{\der}[2][]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
+  % Text in math
+  \newcommand{\As}{\text{ as }}
+  %\newcommand{\And}{\text{ and }}
+  \newcommand{\To}{\text{ to }}
+  \newcommand{\Or}{\text{ or }}
+  \newcommand{\If}{\text{ if }}
+  \newcommand{\Otherwise}{\text{ otherwise}}
+  \newcommand{\ForAll}{\text{ for all }}
+  \newcommand{\For}{\text{ for }}
+  \newcommand{\Yes}{\text{Yes}}
+  \newcommand{\No}{\text{No}}
+  % Scientific numbers
+  \newcommand{\Em}{\text{e-}}
+  \newcommand{\Ep}{\text{e+}}
+  % Vectors and matrices
+  \newcommand{\vctr}[1]{\mathbf{#1}}
+  \newcommand{\mtrx}[1]{\bm{#1}}
+  \newcommand{\set}[1]{\mathbb{#1}}
+  % Random Vectors
+  \newcommand{\randvctr}[1]{\mathbf{#1}}
+  \newcommand{\field}[1]{\mathcal{#1}}
+  % Random Variables
+  \newcommand{\Poisson}{\operatorname{Poisson}}
+  \newcommand{\rind}{\bm{1}}
+  \newcommand{\randvar}[1]{#1}
+  \newcommand{\rX}{\randvar{X}}
+  \newcommand{\rY}{\randvar{Y}}
+  \newcommand{\rZ}{\randvar{Z}}
+  \newcommand{\rvX}{\randvctr{X}}
+  \newcommand{\rvY}{\randvctr{Y}}
+  \newcommand{\rvZ}{\randvctr{Z}}
+  \renewcommand{\emptyset}{\varnothing}
+  \renewcommand{\subseteq}{\subset}
+  % Uppercase Greek, really only need \Beta
+  \newcommand{\Alpha}{A}
+  \newcommand{\Beta}{B}
+  \newcommand{\Epsilon}{E}
+  % Sets
+  \newcommand{\sR}{\set{R}}
+  \newcommand{\sJ}{\set{J}}
+  \newcommand{\sN}{\set{N}}
+  \newcommand{\sQ}{\set{Q}}
+  \newcommand{\sZ}{\set{Z}}
+  \newcommand{\sI}{\set{I}}
+  \newcommand{\sC}{\set{C}}
+\newcommand{\rind}{\mathbf{1}}
+  \newcommand{\fB}{\field{B}}
+  \newcommand{\fC}{\field{C}}
+  \newcommand{\fD}{\field{D}}
+  \newcommand{\fE}{\field{E}}
+  \newcommand{\fF}{\field{F}}
+  \newcommand{\fL}{\field{L}}
+  \newcommand{\fH}{\field{H}}
+  \newcommand{\fE}{\field{E}}
+  \newcommand{\fQ}{\field{Q}}
+  \newcommand{\fI}{\field{I}}
+  \newcommand{\fL}{\field{L}}
+  \newcommand{\fQ}{\field{Q}}
+  % Shorthands for common vectors and matrices
+  \newcommand{\vzero}{\vctr{0}}
+  \newcommand{\vone}{\vctr{1}}
+  \newcommand{\vmu}{\vctr{\mu}}
+  \newcommand{\vtheta}{\vctr{\theta}}
+  \newcommand{\vbeta}{\vctr{\beta}}
+  \newcommand{\va}{\vctr{a}}
+  \newcommand{\vb}{\vctr{b}}
+  \newcommand{\vc}{\vctr{c}}
+  \newcommand{\vd}{\vctr{d}}
+  \newcommand{\ve}{\vctr{e}}
+  \newcommand{\vf}{\vctr{f}}
+  \newcommand{\vg}{\vctr{g}}
+  \newcommand{\vh}{\vctr{h}}
+  \newcommand{\vi}{\vctr{i}}
+  \newcommand{\vj}{\vctr{j}}
+  \newcommand{\vk}{\vctr{k}}
+  \newcommand{\vl}{\vctr{l}}
+  \newcommand{\vm}{\vctr{m}}
+  \newcommand{\vn}{\vctr{n}}
+  \newcommand{\vo}{\vctr{o}}
+  \newcommand{\vp}{\vctr{p}}
+  \newcommand{\vq}{\vctr{q}}
+  \newcommand{\vr}{\vctr{r}}
+  \newcommand{\vs}{\vctr{s}}
+  \newcommand{\vt}{\vctr{t}}
+  \newcommand{\vu}{\vctr{u}}
+  \newcommand{\vv}{\vctr{v}}
+  \newcommand{\vw}{\vctr{w}}
+  \newcommand{\vx}{\vctr{x}}
+  \newcommand{\vy}{\vctr{y}}
+  \newcommand{\vz}{\vctr{z}}
+  \newcommand{\vT}{\vctr{T}}
+
+
+  \newcommand{\mZero}{\mtrx{0}}
+  \newcommand{\mOne}{\mtrx{1}}
+  \newcommand{\mA}{\mtrx{A}}
+  \newcommand{\mB}{\mtrx{B}}
+  \newcommand{\mC}{\mtrx{C}}
+  \newcommand{\mD}{\mtrx{D}}
+  \newcommand{\mE}{\mtrx{E}}
+  \newcommand{\mF}{\mtrx{F}}
+  \newcommand{\mG}{\mtrx{G}}
+  \newcommand{\mH}{\mtrx{H}}
+  \newcommand{\mI}{\mtrx{I}}
+  \newcommand{\mJ}{\mtrx{J}}
+  \newcommand{\mK}{\mtrx{K}}
+  \newcommand{\mL}{\mtrx{L}}
+  \newcommand{\mM}{\mtrx{M}}
+  \newcommand{\mN}{\mtrx{N}}
+  \newcommand{\mO}{\mtrx{O}}
+  \newcommand{\mP}{\mtrx{P}}
+  \newcommand{\mQ}{\mtrx{Q}}
+  \newcommand{\mR}{\mtrx{R}}
+  \newcommand{\mS}{\mtrx{S}}
+  \newcommand{\mT}{\mtrx{T}}
+  \newcommand{\mU}{\mtrx{U}}
+  \newcommand{\mV}{\mtrx{V}}
+  \newcommand{\mW}{\mtrx{W}}
+  \newcommand{\mX}{\mtrx{X}}
+  \newcommand{\mY}{\mtrx{Y}}
+  \newcommand{\mZ}{\mtrx{Z}}
+  \newcommand{\mBeta}{\mtrx{\beta}}
+  \newcommand{\mPhi}{\mtrx{\Phi}}
+  \newcommand{\mLambda}{\mtrx{\Lambda}}
+  \newcommand{\mSigma}{\mtrx{\Sigma}}
+  \newcommand{\mOmega}{\mtrx{\Omega}}
+
+  % Estimators
+  \newcommand{\hbeta}{\hat{\beta}}
+  \newcommand{\hx}{\hat{\x}}
+  \newcommand{\hmu}{\hat{\mu}}
+  \newcommand{\hp}{\hat{p}}
+  \newcommand{\hpi}{\hat{\pi}}
+  \newcommand{\hsigma}{\hat{\sigma}}
+#+END_SRC
+:END:

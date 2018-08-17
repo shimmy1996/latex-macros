@@ -1,0 +1,10 @@
+*
+
+# Git related
+!.gitignore
+!README.org
+
+# Project related
+!*.org
+!*.tex
+!*.sty
