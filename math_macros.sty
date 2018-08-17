@@ -12,6 +12,8 @@
 \newcommand{\ceil}[1]{\lceil#1\rceil}
 \newcommand{\floor}[1]{\lfloor#1\rfloor}
 \newcommand{\norm}[1]{\lVert#1\rVert}
+\newcommand{\mean}[1]{\overline{#1}}
+\newcommand{\conj}[1]{\overline{#1}}
 
 \newcommand{\dd}{\mathop{}\,\mathrm{d}}
 \newcommand{\der}[2][]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
@@ -125,6 +127,7 @@
 
 \newcommand{\tr}{^{\mathsf{T}}}
 \newcommand{\ip}[1]{\langle#1\rangle}
+% \renewcommand{\complement}{\mathrm{c}}
 
 \newcommand{\set}[1]{\mathbb{#1}}
 \newcommand{\field}[1]{\mathcal{#1}}
@@ -221,9 +224,20 @@
 \newcommand{\rvY}{\randvctr{Y}}
 \newcommand{\rvZ}{\randvctr{Z}}
 
-\newcommand{\hbeta}{\hat{\beta}}
-\newcommand{\hx}{\hat{\x}}
-\newcommand{\hmu}{\hat{\mu}}
-\newcommand{\hp}{\hat{p}}
-\newcommand{\hpi}{\hat{\pi}}
-\newcommand{\hsigma}{\hat{\sigma}}
+% Maximum Likelihood Estimator
+\newcommand{\mle}[1]{\hat{#1}}
+% Special
+\newcommand{\hsigmasq}{\mle{\sigma^{2}}}
+% Greek
+\newcommand{\halpha}{\mle{\alpha}}
+\newcommand{\hbeta}{\mle{\beta}}
+\newcommand{\hgamma}{\mle{\gamma}}
+\newcommand{\htheta}{\mle{\theta}}
+\newcommand{\hlambda}{\mle{\lambda}}
+\newcommand{\hmu}{\mle{\mu}}
+\newcommand{\hnu}{\mle{\nu}}
+\newcommand{\hpi}{\mle{\pi}}
+\newcommand{\hsigma}{\mle{\sigma}}
+% Latin
+\newcommand{\hx}{\mle{\x}}
+\newcommand{\hp}{\mle{p}}
