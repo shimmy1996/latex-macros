@@ -186,30 +186,64 @@ Shorthands for typing vectors and matrices.
 *** Shorthands
 **** Sets
 #+BEGIN_SRC latex-macros
-  % Sets
-  \newcommand{\sR}{\set{R}}
-  \newcommand{\sJ}{\set{J}}
-  \newcommand{\sN}{\set{N}}
-  \newcommand{\sQ}{\set{Q}}
-  \newcommand{\sZ}{\set{Z}}
-  \newcommand{\sI}{\set{I}}
+  % Latin
+  \newcommand{\sA}{\set{A}}
+  \newcommand{\sB}{\set{B}}
   \newcommand{\sC}{\set{C}}
+  \newcommand{\sD}{\set{D}}
+  \newcommand{\sE}{\set{E}}
+  \newcommand{\sF}{\set{F}}
+  \newcommand{\sG}{\set{G}}
+  \newcommand{\sH}{\set{H}}
+  \newcommand{\sI}{\set{I}}
+  \newcommand{\sJ}{\set{J}}
+  \newcommand{\sK}{\set{K}}
+  \newcommand{\sL}{\set{L}}
+  \newcommand{\sM}{\set{M}}
+  \newcommand{\sN}{\set{N}}
+  \newcommand{\sO}{\set{O}}
+  \newcommand{\sP}{\set{P}}
+  \newcommand{\sQ}{\set{Q}}
+  \newcommand{\sR}{\set{R}}
+  \newcommand{\sS}{\set{S}}
+  \newcommand{\sT}{\set{T}}
+  \newcommand{\sU}{\set{U}}
+  \newcommand{\sV}{\set{V}}
+  \newcommand{\sW}{\set{W}}
+  \newcommand{\sX}{\set{X}}
+  \newcommand{\sY}{\set{Y}}
+  \newcommand{\sZ}{\set{Z}}
 #+END_SRC
 
 **** Fields
 #+BEGIN_SRC latex-macros
+  % Latin
+  \newcommand{\fA}{\field{A}}
   \newcommand{\fB}{\field{B}}
   \newcommand{\fC}{\field{C}}
   \newcommand{\fD}{\field{D}}
   \newcommand{\fE}{\field{E}}
   \newcommand{\fF}{\field{F}}
-  \newcommand{\fL}{\field{L}}
+  \newcommand{\fG}{\field{G}}
   \newcommand{\fH}{\field{H}}
-  \newcommand{\fE}{\field{E}}
-  \newcommand{\fQ}{\field{Q}}
   \newcommand{\fI}{\field{I}}
+  \newcommand{\fJ}{\field{J}}
+  \newcommand{\fK}{\field{K}}
   \newcommand{\fL}{\field{L}}
+  \newcommand{\fM}{\field{M}}
+  \newcommand{\fN}{\field{N}}
+  \newcommand{\fO}{\field{O}}
+  \newcommand{\fP}{\field{P}}
   \newcommand{\fQ}{\field{Q}}
+  \newcommand{\fR}{\field{R}}
+  \newcommand{\fS}{\field{S}}
+  \newcommand{\fT}{\field{T}}
+  \newcommand{\fU}{\field{U}}
+  \newcommand{\fV}{\field{V}}
+  \newcommand{\fW}{\field{W}}
+  \newcommand{\fX}{\field{X}}
+  \newcommand{\fY}{\field{Y}}
+  \newcommand{\fZ}{\field{Z}}
 #+END_SRC
 
 ** Operations
