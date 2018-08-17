@@ -1,35 +1,72 @@
-:LATEX_MACROS:
-#+BEGIN_SRC latex-macros :output none
-  % Mathematical constants and symbols
+#+Title: Math Macros
+#+Author: Shimmy Xu
+#+PROPERTY: header-args:latex-macros :tangle math_macros.sty
+
+* Mathematical constants
+This includes the constants whose symbols that should be written in an upright position.
+#+BEGIN_SRC latex-macros
   \newcommand{\E}{\mathrm{e}}
-  \newcommand{\dd}{\mathop{}\,\mathrm{d}}
   \newcommand{\I}{\mathrm{i}}
-  \newcommand{\tr}{^{\mathsf{T}}}
-  \newcommand{\ev}{\mathbb{E}}
-  \newcommand{\pr}{\mathbb{P}}
+  % Scientific numbers
+  \newcommand{\Em}{\text{e-}}
+  \newcommand{\Ep}{\text{e+}}
+#+END_SRC
+
+* Uppercase Greek letters
+Uppercase Greek letters, although they are essentially the same as corresponding Latin letters, I find this more comfortable for things like Beta functions (which is probably the only I will ever need).
+#+BEGIN_SRC latex-macros
+  \newcommand{\Alpha}{A}
+  \newcommand{\Beta}{B}
+  \newcommand{\Epsilon}{E}
+#+END_SRC
+
+* Common operators
+Common unary mathematical operators that takes quite some effort to typeset.
+#+BEGIN_SRC latex-macros
+  \newcommand{\abs}[1]{\lvert#1\rvert}
+  \newcommand{\ceil}[1]{\lceil#1\rceil}
+  \newcommand{\floor}[1]{\lfloor#1\rfloor}
+  \newcommand{\norm}[1]{\lVert#1\rVert}
+#+END_SRC
+
+Derivatives and partial derivatives.
+#+BEGIN_SRC latex-macros
+  \newcommand{\dd}{\mathop{}\,\mathrm{d}}
+  \newcommand{\der}[2][]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
+  \newcommand{\pder}[2][]{\frac{\partial#1}{\partial#2}}
+#+END_SRC
+
+Comparison operators.
+#+BEGIN_SRC latex-macros
   \newcommand{\geqst}{\geq_{\text{st}}}
   \newcommand{\leqst}{\leq_{\text{st}}}
-  % Common function with text names
+#+END_SRC
+
+Limits.
+#+BEGIN_SRC latex-macros
+  \newcommand{\pto}{\overset{p}\to}
+  \newcommand{\lpto}{\overset{p}\longrightarrow}
+  \newcommand{\dto}{\overset{d}\to}
+  \newcommand{\ldto}{\overset{d}\longrightarrow}
+  \newcommand{\asto}{\overset{\text{a.s.}}\longrightarrow}
+#+END_SRC
+
+* Functions with text names
+Functions with text names.
+#+BEGIN_SRC latex-macros
   \newcommand{\sgn}{\operatorname{sgn}}
-  \newcommand{\var}{\operatorname{var}}
-  \newcommand{\corr}{\operatorname{cor}}
-  \newcommand{\cov}{\operatorname{cov}}
   \newcommand{\im}{\operatorname{Im}}
   \newcommand{\re}{\operatorname{Re}}
   \newcommand{\rank}{\operatorname{rank}}
   \newcommand{\diag}{\operatorname{diag}}
   \newcommand{\col}{\operatorname{col}}
   \newcommand{\row}{\operatorname{row}}
-  % Operators and functions
-  \newcommand{\abs}[1]{\lvert#1\rvert}
-  \newcommand{\norm}[1]{\lVert#1\rVert}
-  \newcommand{\floor}[1]{\lfloor#1\rfloor}
-  \newcommand{\ceil}[1]{\lceil#1\rceil}
-  \newcommand{\pder}[2][]{\frac{\partial#1}{\partial#2}}
-  \newcommand{\der}[2][]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
-  % Text in math
+#+END_SRC
+
+* Texts in mathematical statements
+#+BEGIN_SRC latex-macros
   \newcommand{\As}{\text{ as }}
-  %\newcommand{\And}{\text{ and }}
+  % \newcommand{\And}{\text{ and }}
   \newcommand{\To}{\text{ to }}
   \newcommand{\Or}{\text{ or }}
   \newcommand{\If}{\text{ if }}
@@ -38,59 +75,32 @@
   \newcommand{\For}{\text{ for }}
   \newcommand{\Yes}{\text{Yes}}
   \newcommand{\No}{\text{No}}
-  % Scientific numbers
-  \newcommand{\Em}{\text{e-}}
-  \newcommand{\Ep}{\text{e+}}
-  % Vectors and matrices
+  \newcommand{\Num}{\text{\# }}
+#+END_SRC
+
+* Vectors and matrices
+** Notation
+Note that =bm= does not work with MathJax.
+#+BEGIN_SRC latex-macros
   \newcommand{\vctr}[1]{\mathbf{#1}}
   \newcommand{\mtrx}[1]{\bm{#1}}
-  \newcommand{\set}[1]{\mathbb{#1}}
-  % Random Vectors
-  \newcommand{\randvctr}[1]{\mathbf{#1}}
-  \newcommand{\field}[1]{\mathcal{#1}}
-  % Random Variables
-  \newcommand{\Poisson}{\operatorname{Poisson}}
-  \newcommand{\rind}{\bm{1}}
-  \newcommand{\randvar}[1]{#1}
-  \newcommand{\rX}{\randvar{X}}
-  \newcommand{\rY}{\randvar{Y}}
-  \newcommand{\rZ}{\randvar{Z}}
-  \newcommand{\rvX}{\randvctr{X}}
-  \newcommand{\rvY}{\randvctr{Y}}
-  \newcommand{\rvZ}{\randvctr{Z}}
-  \renewcommand{\emptyset}{\varnothing}
-  \renewcommand{\subseteq}{\subset}
-  % Uppercase Greek, really only need \Beta
-  \newcommand{\Alpha}{A}
-  \newcommand{\Beta}{B}
-  \newcommand{\Epsilon}{E}
-  % Sets
-  \newcommand{\sR}{\set{R}}
-  \newcommand{\sJ}{\set{J}}
-  \newcommand{\sN}{\set{N}}
-  \newcommand{\sQ}{\set{Q}}
-  \newcommand{\sZ}{\set{Z}}
-  \newcommand{\sI}{\set{I}}
-  \newcommand{\sC}{\set{C}}
-\newcommand{\rind}{\mathbf{1}}
-  \newcommand{\fB}{\field{B}}
-  \newcommand{\fC}{\field{C}}
-  \newcommand{\fD}{\field{D}}
-  \newcommand{\fE}{\field{E}}
-  \newcommand{\fF}{\field{F}}
-  \newcommand{\fL}{\field{L}}
-  \newcommand{\fH}{\field{H}}
-  \newcommand{\fE}{\field{E}}
-  \newcommand{\fQ}{\field{Q}}
-  \newcommand{\fI}{\field{I}}
-  \newcommand{\fL}{\field{L}}
-  \newcommand{\fQ}{\field{Q}}
-  % Shorthands for common vectors and matrices
+#+END_SRC
+
+*** Shorthands
+Shorthands for typing vectors and matrices.
+
+**** Vectors
+#+BEGIN_SRC latex-macros
+  % Special
   \newcommand{\vzero}{\vctr{0}}
   \newcommand{\vone}{\vctr{1}}
+  % Greek
+  \newcommand{\valpha}{\vctr{\alpha}}
+  \newcommand{\vbeta}{\vctr{\beta}}
+  \newcommand{\vgamma}{\vctr{\gamma}}
   \newcommand{\vmu}{\vctr{\mu}}
   \newcommand{\vtheta}{\vctr{\theta}}
-  \newcommand{\vbeta}{\vctr{\beta}}
+  % Latin
   \newcommand{\va}{\vctr{a}}
   \newcommand{\vb}{\vctr{b}}
   \newcommand{\vc}{\vctr{c}}
@@ -117,11 +127,20 @@
   \newcommand{\vx}{\vctr{x}}
   \newcommand{\vy}{\vctr{y}}
   \newcommand{\vz}{\vctr{z}}
-  \newcommand{\vT}{\vctr{T}}
+#+END_SRC
 
-
+**** Matrices
+#+BEGIN_SRC latex-macros
+  % Special
   \newcommand{\mZero}{\mtrx{0}}
   \newcommand{\mOne}{\mtrx{1}}
+  % Greek
+  \newcommand{\mBeta}{\mtrx{\beta}}
+  \newcommand{\mPhi}{\mtrx{\Phi}}
+  \newcommand{\mLambda}{\mtrx{\Lambda}}
+  \newcommand{\mSigma}{\mtrx{\Sigma}}
+  \newcommand{\mOmega}{\mtrx{\Omega}}
+  % Latin
   \newcommand{\mA}{\mtrx{A}}
   \newcommand{\mB}{\mtrx{B}}
   \newcommand{\mC}{\mtrx{C}}
@@ -148,13 +167,98 @@
   \newcommand{\mX}{\mtrx{X}}
   \newcommand{\mY}{\mtrx{Y}}
   \newcommand{\mZ}{\mtrx{Z}}
-  \newcommand{\mBeta}{\mtrx{\beta}}
-  \newcommand{\mPhi}{\mtrx{\Phi}}
-  \newcommand{\mLambda}{\mtrx{\Lambda}}
-  \newcommand{\mSigma}{\mtrx{\Sigma}}
-  \newcommand{\mOmega}{\mtrx{\Omega}}
+#+END_SRC
 
-  % Estimators
+** Operations
+#+BEGIN_SRC latex-macros
+  \newcommand{\tr}{^{\mathsf{T}}}
+  \newcommand{\ip}[1]{\langle#1\rangle}
+#+END_SRC
+
+* Sets and fields
+** Notation
+#+BEGIN_SRC latex-macros
+  \newcommand{\set}[1]{\mathbb{#1}}
+  \newcommand{\field}[1]{\mathcal{#1}}
+  \renewcommand{\emptyset}{\varnothing}
+#+END_SRC
+
+*** Shorthands
+**** Sets
+#+BEGIN_SRC latex-macros
+  % Sets
+  \newcommand{\sR}{\set{R}}
+  \newcommand{\sJ}{\set{J}}
+  \newcommand{\sN}{\set{N}}
+  \newcommand{\sQ}{\set{Q}}
+  \newcommand{\sZ}{\set{Z}}
+  \newcommand{\sI}{\set{I}}
+  \newcommand{\sC}{\set{C}}
+#+END_SRC
+
+**** Fields
+#+BEGIN_SRC latex-macros
+  \newcommand{\fB}{\field{B}}
+  \newcommand{\fC}{\field{C}}
+  \newcommand{\fD}{\field{D}}
+  \newcommand{\fE}{\field{E}}
+  \newcommand{\fF}{\field{F}}
+  \newcommand{\fL}{\field{L}}
+  \newcommand{\fH}{\field{H}}
+  \newcommand{\fE}{\field{E}}
+  \newcommand{\fQ}{\field{Q}}
+  \newcommand{\fI}{\field{I}}
+  \newcommand{\fL}{\field{L}}
+  \newcommand{\fQ}{\field{Q}}
+#+END_SRC
+
+** Operations
+#+BEGIN_SRC latex-macros
+  \renewcommand{\subseteq}{\subset}
+#+END_SRC
+
+* Probability
+** Probability Distributions
+Common probability distributions.
+#+BEGIN_SRC latex-macros
+  \newcommand{\rInd}{\mathbf{1}}
+  \newcommand{\rPoi}{\operatorname{Poisson}}
+  \newcommand{\rBern}{\operatorname{Bern}}
+  \newcommand{\rNorm}{\mathcal{N}}
+#+END_SRC
+
+** Operators
+Probabilistic operators.
+#+BEGIN_SRC latex-macros
+  \newcommand{\ev}{\mathbb{E}}
+  \newcommand{\pr}{\mathbb{P}}
+  \newcommand{\var}{\operatorname{var}}
+  \newcommand{\corr}{\operatorname{cor}}
+  \newcommand{\cov}{\operatorname{cov}}
+#+END_SRC
+
+** Random Variables
+*** Notation
+#+BEGIN_SRC latex-macros
+  % Random Vectors
+  \newcommand{\randvctr}[1]{\mathbf{#1}}
+  % Random Scalars
+  \newcommand{\rind}{\bm{1}}
+  \newcommand{\randvar}[1]{#1}
+#+END_SRC
+
+*** Shorthands
+#+BEGIN_SRC latex-macros
+  \newcommand{\rX}{\randvar{X}}
+  \newcommand{\rY}{\randvar{Y}}
+  \newcommand{\rZ}{\randvar{Z}}
+  \newcommand{\rvX}{\randvctr{X}}
+  \newcommand{\rvY}{\randvctr{Y}}
+  \newcommand{\rvZ}{\randvctr{Z}}
+#+END_SRC
+
+** Estimators
+#+BEGIN_SRC latex-macros
   \newcommand{\hbeta}{\hat{\beta}}
   \newcommand{\hx}{\hat{\x}}
   \newcommand{\hmu}{\hat{\mu}}
@@ -162,4 +266,3 @@
   \newcommand{\hpi}{\hat{\pi}}
   \newcommand{\hsigma}{\hat{\sigma}}
 #+END_SRC
-:END:
