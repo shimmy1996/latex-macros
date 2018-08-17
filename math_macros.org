@@ -230,11 +230,20 @@ Common probability distributions.
 ** Operators
 Probabilistic operators.
 #+BEGIN_SRC latex-macros
-  \newcommand{\ev}{\mathbb{E}}
+  % Probability
   \newcommand{\pr}{\mathbb{P}}
-  \newcommand{\var}{\operatorname{var}}
-  \newcommand{\corr}{\operatorname{cor}}
-  \newcommand{\cov}{\operatorname{cov}}
+  % Expectation
+  \newcommand{\ev}{\mathbb{E}}
+  % Variance
+  \newcommand{\var}{\operatorname{Var}}
+  % Covariance
+  \newcommand{\cov}{\operatorname{Cov}}
+  % Correlation
+  \newcommand{\corr}{\operatorname{Cor}}
+  % Skewness
+  \newcommand{\sk}{\mathbb{Sk}}
+  % Kurtosis
+  \newcommand{\kur}{\mathbb{Kur}}
 #+END_SRC
 
 ** Random Variables
