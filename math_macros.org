@@ -100,8 +100,31 @@ Shorthands for typing vectors and matrices.
   \newcommand{\valpha}{\vctr{\alpha}}
   \newcommand{\vbeta}{\vctr{\beta}}
   \newcommand{\vgamma}{\vctr{\gamma}}
-  \newcommand{\vmu}{\vctr{\mu}}
+  \newcommand{\vdelta}{\vctr{\delta}}
+  \newcommand{\vepsilon}{\vctr{\epsilon}}
+  \newcommand{\vvarepsilon}{\vctr{\varepsilon}}
+  \newcommand{\vzeta}{\vctr{\zeta}}
+  \newcommand{\veta}{\vctr{\eta}}
   \newcommand{\vtheta}{\vctr{\theta}}
+  \newcommand{\vvartheta}{\vctr{\vartheta}}
+  \newcommand{\vkappa}{\vctr{\kappa}}
+  \newcommand{\vlambda}{\vctr{\lambda}}
+  \newcommand{\vmu}{\vctr{\mu}}
+  \newcommand{\vnu}{\vctr{\nu}}
+  \newcommand{\vxi}{\vctr{\xi}}
+  \newcommand{\vpi}{\vctr{\pi}}
+  \newcommand{\vvarpi}{\vctr{\varpi}}
+  \newcommand{\vrho}{\vctr{\rho}}
+  \newcommand{\vvarrho}{\vctr{\varrho}}
+  \newcommand{\vsigma}{\vctr{\sigma}}
+  \newcommand{\vvarsigma}{\vctr{\varsigma}}
+  \newcommand{\vtau}{\vctr{\tau}}
+  \newcommand{\vupsilon}{\vctr{\upsilon}}
+  \newcommand{\vphi}{\vctr{\phi}}
+  \newcommand{\vvarphi}{\vctr{\varphi}}
+  \newcommand{\vchi}{\vctr{\chi}}
+  \newcommand{\vpsi}{\vctr{\psi}}
+  \newcommand{\vomega}{\vctr{\omega}}
   % Latin
   \newcommand{\va}{\vctr{a}}
   \newcommand{\vb}{\vctr{b}}
@@ -137,10 +160,16 @@ Shorthands for typing vectors and matrices.
   \newcommand{\mZero}{\mtrx{0}}
   \newcommand{\mOne}{\mtrx{1}}
   % Greek
-  \newcommand{\mBeta}{\mtrx{\beta}}
-  \newcommand{\mPhi}{\mtrx{\Phi}}
+  \newcommand{\mGamma}{\mtrx{\Gamma}}
+  \newcommand{\mDelta}{\mtrx{\Delta}}
+  \newcommand{\mTheta}{\mtrx{\Theta}}
   \newcommand{\mLambda}{\mtrx{\Lambda}}
+  \newcommand{\mXi}{\mtrx{\Xi}}
+  \newcommand{\mPi}{\mtrx{\Pi}}
   \newcommand{\mSigma}{\mtrx{\Sigma}}
+  \newcommand{\mUpsilon}{\mtrx{\Upsilon}}
+  \newcommand{\mPhi}{\mtrx{\Phi}}
+  \newcommand{\mPsi}{\mtrx{\Psi}}
   \newcommand{\mOmega}{\mtrx{\Omega}}
   % Latin
   \newcommand{\mA}{\mtrx{A}}
