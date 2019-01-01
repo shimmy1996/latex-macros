@@ -309,7 +309,7 @@ Probabilistic operators.
   % Correlation
   \newcommand{\corr}{\operatorname{Cor}}
   % Skewness
-  \newcommand{\sk}{\operatorname{Sk}}
+  \newcommand{\skw}{\operatorname{Skw}}
   % Kurtosis
   \newcommand{\kur}{\operatorname{Kur}}
 #+END_SRC
@@ -336,21 +336,48 @@ Probabilistic operators.
 
 ** Estimators
 #+BEGIN_SRC latex-macros
-  % Maximum Likelihood Estimator
-  \newcommand{\mle}[1]{\hat{#1}}
+  \newcommand{\estm}[1]{\widehat{#1}}
+#+END_SRC
+
+*** Shorthands
+#+BEGIN_SRC latex-macros
   % Special
-  \newcommand{\hsigmasq}{\mle{\sigma^{2}}}
+  \newcommand{\hsigmasq}{\estm{\sigma^{2}}}
   % Greek
-  \newcommand{\halpha}{\mle{\alpha}}
-  \newcommand{\hbeta}{\mle{\beta}}
-  \newcommand{\hgamma}{\mle{\gamma}}
-  \newcommand{\htheta}{\mle{\theta}}
-  \newcommand{\hlambda}{\mle{\lambda}}
-  \newcommand{\hmu}{\mle{\mu}}
-  \newcommand{\hnu}{\mle{\nu}}
-  \newcommand{\hpi}{\mle{\pi}}
-  \newcommand{\hsigma}{\mle{\sigma}}
+  \newcommand{\halpha}{\estm{\alpha}}
+  \newcommand{\hbeta}{\estm{\beta}}
+  \newcommand{\hgamma}{\estm{\gamma}}
+  \newcommand{\htheta}{\estm{\theta}}
+  \newcommand{\hlambda}{\estm{\lambda}}
+  \newcommand{\hmu}{\estm{\mu}}
+  \newcommand{\hnu}{\estm{\nu}}
+  \newcommand{\hpi}{\estm{\pi}}
+  \newcommand{\hsigma}{\estm{\sigma}}
   % Latin
-  \newcommand{\hx}{\mle{\x}}
-  \newcommand{\hp}{\mle{p}}
+  \newcommand{\ha}{\estm{a}}
+  \newcommand{\hb}{\estm{b}}
+  \newcommand{\hc}{\estm{c}}
+  \newcommand{\hd}{\estm{d}}
+  \newcommand{\he}{\estm{e}}
+  \newcommand{\hf}{\estm{f}}
+  \newcommand{\hg}{\estm{g}}
+  \newcommand{\hh}{\estm{h}}
+  \newcommand{\hi}{\estm{i}}
+  \newcommand{\hj}{\estm{j}}
+  \newcommand{\hk}{\estm{k}}
+  \newcommand{\hl}{\estm{l}}
+  %\newcommand{\hm}{\estm{m}}
+  \newcommand{\hn}{\estm{n}}
+  \newcommand{\ho}{\estm{o}}
+  \newcommand{\hp}{\estm{p}}
+  \newcommand{\hq}{\estm{q}}
+  \newcommand{\hr}{\estm{r}}
+  \newcommand{\hs}{\estm{s}}
+  %\newcommand{\ht}{\estm{t}}
+  \newcommand{\hu}{\estm{u}}
+  \newcommand{\hv}{\estm{v}}
+  \newcommand{\hw}{\estm{w}}
+  \newcommand{\hx}{\estm{x}}
+  \newcommand{\hy}{\estm{y}}
+  \newcommand{\hz}{\estm{z}}
 #+END_SRC
