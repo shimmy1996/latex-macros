@@ -27,7 +27,7 @@ Common unary mathematical operators that takes quite some effort to typeset.
   \newcommand{\ceil}[1]{\lceil#1\rceil}
   \newcommand{\floor}[1]{\lfloor#1\rfloor}
   \newcommand{\norm}[1]{\lVert#1\rVert}
-  \newcommand{\mean}[1]{\overline{#1}}
+  \newcommand{\mean}[1]{\bar{#1}}
   \newcommand{\conj}[1]{\overline{#1}}
 #+END_SRC
 
@@ -87,7 +87,7 @@ Functions with text names.
 ** Notation
 Note that =bm= does not work with MathJax.
 #+BEGIN_SRC latex-macros
-  \newcommand{\vctr}[1]{\mathbf{#1}}
+  \newcommand{\vctr}[1]{\boldsymbol{#1}}
   \newcommand{\mtrx}[1]{\bm{#1}}
 #+END_SRC
 
