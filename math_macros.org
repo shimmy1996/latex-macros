@@ -63,6 +63,9 @@ Functions with text names.
   \newcommand{\diag}{\operatorname{diag}}
   \newcommand{\col}{\operatorname{col}}
   \newcommand{\row}{\operatorname{row}}
+  \newcommand{\arcsinh}{\operatorname{arcsinh}}
+  \newcommand{\arccosh}{\operatorname{arccosh}}
+  \newcommand{\arctanh}{\operatorname{arctanh}}
 #+END_SRC
 
 * Texts in mathematical statements
