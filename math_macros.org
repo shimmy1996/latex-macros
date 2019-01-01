@@ -29,6 +29,34 @@ Common unary mathematical operators that takes quite some effort to typeset.
   \newcommand{\norm}[1]{\lVert#1\rVert}
   \newcommand{\mean}[1]{\bar{#1}}
   \newcommand{\conj}[1]{\overline{#1}}
+
+  % Shorthands for mean.
+  \newcommand{\ma}{\mean{a}}
+  \newcommand{\mb}{\mean{b}}
+  \newcommand{\mc}{\mean{c}}
+  \newcommand{\md}{\mean{d}}
+  \newcommand{\me}{\mean{e}}
+  \newcommand{\mf}{\mean{f}}
+  \newcommand{\mg}{\mean{g}}
+  \newcommand{\mh}{\mean{h}}
+  \newcommand{\mi}{\mean{i}}
+  \newcommand{\mj}{\mean{j}}
+  \newcommand{\mk}{\mean{k}}
+  \newcommand{\ml}{\mean{l}}
+  \newcommand{\mm}{\mean{m}}
+  \newcommand{\mn}{\mean{n}}
+  \newcommand{\mo}{\mean{o}}
+  % \newcommand{\mp}{\mean{p}}
+  \newcommand{\mq}{\mean{q}}
+  \newcommand{\mr}{\mean{r}}
+  \newcommand{\ms}{\mean{s}}
+  \newcommand{\mt}{\mean{t}}
+  % \newcommand{\mu}{\mean{u}}
+  \newcommand{\mv}{\mean{v}}
+  \newcommand{\mw}{\mean{w}}
+  \newcommand{\mx}{\mean{x}}
+  \newcommand{\my}{\mean{y}}
+  \newcommand{\mz}{\mean{z}}
 #+END_SRC
 
 Derivatives and partial derivatives.
