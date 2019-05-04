@@ -84,16 +84,19 @@ Limits.
 * Functions with text names
 Functions with text names.
 #+BEGIN_SRC latex-macros
-  \newcommand{\sgn}{\operatorname{sgn}}
+  \newcommand{\sign}{\operatorname{sign}}
   \newcommand{\im}{\operatorname{Im}}
   \newcommand{\re}{\operatorname{Re}}
   \newcommand{\rank}{\operatorname{rank}}
+  \newcommand{\trace}{\operatorname{trace}}
   \newcommand{\diag}{\operatorname{diag}}
   \newcommand{\col}{\operatorname{col}}
   \newcommand{\row}{\operatorname{row}}
   \newcommand{\arcsinh}{\operatorname{arcsinh}}
   \newcommand{\arccosh}{\operatorname{arccosh}}
   \newcommand{\arctanh}{\operatorname{arctanh}}
+  \newcommand{\argmax}{\mathop{\arg\max}}
+  \newcommand{\argmin}{\mathop{\arg\min}}
 #+END_SRC
 
 * Texts in mathematical statements
